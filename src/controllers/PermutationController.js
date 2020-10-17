@@ -4,6 +4,8 @@ module.exports = {
   async index(req, res) {
     const { pergenEntry } = req.body;
 
+
+    
     try {
       let permutations = await pergen(pergenEntry, result => result );
 
