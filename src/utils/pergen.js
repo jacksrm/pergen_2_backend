@@ -17,7 +17,7 @@ const findSecond = (array, first, nextElementIndex, lastElementIndex) => {
 }
 
 // executa as permutações
-const perm = (array, callback) => {
+const perm = (array) => {
   const size = array.length;
   let permutations = [];
   let isFinished = false;
@@ -50,7 +50,7 @@ const perm = (array, callback) => {
       array.splice(firstIndex + 1, 0, ...aux);
     }
   }
-  return callback(permutations);
+  return permutations;
 }
 
 module.exports = perm;
