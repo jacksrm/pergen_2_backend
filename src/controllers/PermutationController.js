@@ -7,7 +7,7 @@ module.exports = {
 
     
     try {
-      let permutations = await pergen(pergenEntry, result => result );
+      let permutations = await pergen(pergenEntry);
 
       return res.json(permutations);
     } catch (error) {
